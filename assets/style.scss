@@ -1,0 +1,121 @@
+/*================Resets==============*/
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+	// color: white;
+}
+
+ul{
+	list-style:	 none;
+	// color: #fff;
+}
+
+li{
+	// color: #fff;
+}
+
+
+img{
+	max-width: 100%;
+}
+
+a{
+	text-decoration: none;
+	// color: #fff;
+}
+
+button{
+	// color: #fff;
+}
+
+
+
+/*================Global Classes==============*/
+.container{
+	width: 90%;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.row{
+	display: flex;
+}
+
+.center{
+	justify-content: center;
+}
+
+.column{
+	display: flex;
+	flex-direction: column;
+}
+
+.split{
+	justify-content: space-between;
+}
+
+.split-center{
+	justify-content: space-around;
+}
+
+.column-center{
+	align-items: center;
+}
+
+.row-reverse{
+	flex-direction: row-reverse;
+}
+
+.centerHold{
+	align-items:center;
+	align-content:center;
+}
+
+.bottom{
+	align-items: flex-end;
+}
+
+.col1-3{
+	width: 33.333%;
+}
+
+.hexagon {
+	width: 100px;
+	height: 55px;
+	background: white;
+	position: relative;
+	margin-top: 20px;
+	opacity: 40px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: -25px;
+		left: 0;
+		width: 0;
+		height: 0;
+		border-left: 50px solid transparent;
+		border-right: 50px solid transparent;
+		border-bottom: 25px solid white;
+	}
+
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: -25px;
+			left: 0;
+			width: 0;
+			height: 0;
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+			border-top: 25px solid white;
+			}
+		}
+/*================Page Styles==============*/
